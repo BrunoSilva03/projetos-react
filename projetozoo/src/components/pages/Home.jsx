@@ -1,6 +1,9 @@
+import NavBar from '../layoult/NavBar';
+
 function Home() {
     return (
-        <h1>Olá</h1>
+        <NavBar />
+        
     )
 }
 
