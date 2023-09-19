@@ -1,8 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Home from './components/pages/Home'
+import NewAnimal from './components/pages/NewAnimal'
+import Animals from './components/pages/Animals'
+import About from './components/pages/About'
+import Contact from './components/pages/Contact'
+
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
