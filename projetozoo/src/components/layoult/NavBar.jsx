@@ -18,6 +18,24 @@ function NavBar() {
                             <p>Animais</p>
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/newanimal">
+                            <p>Adicionar Animal</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/about">
+                            <p>Sobre</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/contact">
+                            <p>Contato</p>
+                        </Link>
+                    </li>
                 </ul>
             </Container>
         </nav>
