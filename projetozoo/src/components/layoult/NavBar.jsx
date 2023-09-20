@@ -1,15 +1,26 @@
 import { Link } from 'react-router-dom'
+import Container from './Container'
 
 import styles from './NavBar.module.css'
 import logo from '../../../imagens/lion-72px.png'
 
 function NavBar() {
-    return(
-       <nav className={styles.navbar}>
-            <Link to="/">
-                <img src={logo} alt="Lion-logo" />
-            </Link>
-       </nav>
+    return (
+        <nav className={styles.navbar}>
+            <Container>
+
+                <Link to="/">
+                    <img src={logo} alt="Lion-logo" />
+                </Link>
+                <ul>
+                    <li>
+                        <Link to="/animals">
+                            <p>Animais</p>
+                        </Link>
+                    </li>
+                </ul>
+            </Container>
+        </nav>
     )
 }
 
