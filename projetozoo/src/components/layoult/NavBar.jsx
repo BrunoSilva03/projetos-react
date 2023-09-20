@@ -4,10 +4,11 @@ import Container from './Container'
 import styles from './NavBar.module.css'
 import logo from '../../../imagens/lion-72px.png'
 
+
 function NavBar() {
     return (
         <nav className={styles.navbar}>
-            <Container>
+            
 
                 <Link to="/">
                     <img src={logo} alt="Lion-logo" />
@@ -37,7 +38,7 @@ function NavBar() {
                         </Link>
                     </li>
                 </ul>
-            </Container>
+            
         </nav>
     )
 }
