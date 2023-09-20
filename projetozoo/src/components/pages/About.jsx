@@ -1,6 +1,11 @@
+import NavBar from '../layoult/NavBar'
+
 function About() {
     return(
-        <h1>About</h1>
+        <>
+            <NavBar />
+            <h1>About</h1>
+        </>
     )
 }
 

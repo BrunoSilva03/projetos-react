@@ -2,9 +2,9 @@
 
 .navbar {
     background-color: green;
-    background-image: url('../../../imagens/jungle-trees.jpg');
-    background-attachment: scroll;
-    position: fixed;
+    background-image: url('../../../imagens/jungle-savage.jpg');
+    background-attachment: fixed;
+    background-position: center center;
     background-size: contain;
     width: 100%;
     height: 170px;
@@ -14,7 +14,8 @@
     align-items: center;
     padding: 50px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
 }
 
 .navbar a {
@@ -26,7 +27,7 @@
 }
 
 .navbar a:hover {
-    color: yellow;
+    color: greenyellow;
 }
 
 .navbar ul {
@@ -36,6 +37,7 @@
     
 }
 
-.imagemfundo {
-    
+.icons {
+    font-size: 2em;
 }
+

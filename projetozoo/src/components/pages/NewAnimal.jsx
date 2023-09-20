@@ -1,6 +1,12 @@
+import NavBar from '../layoult/NavBar'
+
+
 function NewAnimal() {
     return (
-        <h1>NewAnimal</h1>
+        <>
+            <NavBar />
+            <h1>NewAnimal</h1>
+        </>
     )
 }
 

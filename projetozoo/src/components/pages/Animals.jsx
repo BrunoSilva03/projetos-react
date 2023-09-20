@@ -1,6 +1,11 @@
+import NavBar from '../layoult/NavBar'
+
 function Animals() {
     return(
-        <h1>Animals</h1>
+        <>
+            <NavBar />
+            <p>Animals</p>
+        </>
     )
 }
 

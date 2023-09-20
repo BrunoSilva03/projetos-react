@@ -1,6 +1,12 @@
+import NavBar from '../layoult/NavBar'
+
 function Contact() {
     return(
-        <h1>Contact</h1>
+        <>
+            <NavBar />
+
+            <p>Contact</p>
+        </>
     )
 }
 
