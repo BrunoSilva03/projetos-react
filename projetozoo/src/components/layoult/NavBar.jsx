@@ -3,12 +3,15 @@ import Container from './Container'
 
 import styles from './NavBar.module.css'
 import logo from '../../../imagens/lion-72px.png'
+import jungle from '../../../imagens/jungle-savage.jpg'
 
 
 function NavBar() {
     return (
         <nav className={styles.navbar}>
             
+            <img className={styles.imagemfundo} src={jungle} alt="jungle savage" />
+
 
                 <Link to="/">
                     <img src={logo} alt="Lion-logo" />

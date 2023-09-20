@@ -2,6 +2,10 @@
 
 .navbar {
     background-color: green;
+    background-image: url('../../../imagens/jungle-trees.jpg');
+    background-attachment: scroll;
+    position: fixed;
+    background-size: contain;
     width: 100%;
     height: 170px;
     display: flex;
@@ -29,5 +33,9 @@
     list-style: none;
     display: flex;
     gap: 15px;
+    
+}
+
+.imagemfundo {
     
 }
