@@ -1,4 +1,5 @@
 import NavBar from '../layoult/NavBar'
+import Footer from '../layoult/Footer'
 
 
 function NewAnimal() {
@@ -6,6 +7,7 @@ function NewAnimal() {
         <>
             <NavBar />
             <h1>NewAnimal</h1>
+            <Footer />
         </>
     )
 }

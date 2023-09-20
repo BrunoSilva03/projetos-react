@@ -1,0 +1,18 @@
+.footer {
+    background-color: rgb(26, 227, 26);
+    color: white;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: bold;
+    transition: 0.5s;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer:hover {
+    color: greenyellow;
+}

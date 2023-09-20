@@ -1,4 +1,5 @@
 import NavBar from '../layoult/NavBar'
+import Footer from '../layoult/Footer'
 
 function Contact() {
     return(
@@ -6,6 +7,8 @@ function Contact() {
             <NavBar />
 
             <p>Contact</p>
+
+            <Footer />
         </>
     )
 }
