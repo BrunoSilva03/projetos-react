@@ -4,4 +4,4 @@ function Animals() {
     )
 }
 
-export default Animals();
+export default Animals;
