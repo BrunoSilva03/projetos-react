@@ -1,5 +1,6 @@
 .footer {
-    background-color: rgb(26, 227, 26);
+    /*background-color: rgb(26, 227, 26);*/
+    background-image: linear-gradient(to right, green, greenyellow);
     color: white;
     display: flex;
     gap: 6px;

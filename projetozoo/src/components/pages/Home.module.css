@@ -9,7 +9,10 @@
     display: grid;
 
     grid-template-areas:
-    ".  . container  .  ."
+    ".  . container  .  .";
+
+    
+    margin-bottom: 60px;
     
 }
 
@@ -45,4 +48,8 @@
 .titleContainer h1 {
     font-size: 7em;
     font-family: 'Savage Jungle';
+}
+
+.article {
+    margin-bottom: 40px;
 }

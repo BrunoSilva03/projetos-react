@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Savage Jungle';
+    src: url('fonts/JungleRuff.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title{
+    background-image: linear-gradient(to right, green, greenyellow);
+    height: 100px;
+    color: white;
+    font-family: 'Savage Jungle';
+    display: flex;
+    align-items: center;
+    
+    
+   
+}
+
+.title h1 {
+    font-size: 3.5em;
+    margin-left: 30px;
+}
+
+
+.articleImg {
+    background-image: url('imagens/tigers.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.articleText {
+    background-color: rgba(255, 255, 255, 0.767);
+    width: 600px;
+    padding: 20px;
+}
+
+.articleText h1 {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
+}
+
+.articleText p {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
