@@ -34,6 +34,10 @@
     color: aqua;
 }
 
+.container .iconReact:hover {
+    color: rgb(1, 206, 206);
+}
+
 .container i {
     color: greenyellow;
     transition: 0.5s;
