@@ -9,7 +9,7 @@
 
 .container {
    
-    width: 600px;
+    width: 900px;
     padding: 50px;
     grid-area: container;
 }
@@ -18,12 +18,37 @@
     font-size: 3em;
     color: greenyellow;
     margin-bottom: 33px;
+    transition: 0.5s;
+}
+
+.container h1:hover {
+    color: rgb(149, 220, 42);
 }
 
 .container p {
     font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container .iconReact {
+    color: aqua;
 }
 
 .container i {
-    color: aqua;
+    color: greenyellow;
+    transition: 0.5s;
+}
+
+.container i:hover {
+    color: rgb(149, 220, 42);
+}
+
+.container a {
+    text-decoration: none;
+    color: greenyellow;
+    transition: 0.5s;
+}
+
+.container a:hover {
+    color: rgb(127, 188, 36);
 }

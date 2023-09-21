@@ -12,7 +12,7 @@ function About() {
                 <section className={styles.container}>
                     <h1>Sobre:</h1>
                     <p>Simulação de um Sistema de Gerenciamento de animais de um jardim zoológico.</p>
-                    <p>Feito em React <i>
+                    <p>Feito em React <i className={styles.iconReact}>
                         <FaReact />
                     </i></p>
                 </section>
