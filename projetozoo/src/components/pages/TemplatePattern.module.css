@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Savage Jungle';
+    src: url('fonts/JungleRuff.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .containerBody {
    display: grid;
 
@@ -9,7 +16,7 @@
 
 .container {
    
-    width: 900px;
+    width: 1200px;
     padding: 50px;
     grid-area: container;
 }
@@ -19,6 +26,7 @@
     color: greenyellow;
     margin-bottom: 33px;
     transition: 0.5s;
+    font-family: 'Savage Jungle'
 }
 
 .container h1:hover {
@@ -56,3 +64,4 @@
 .container a:hover {
     color: rgb(127, 188, 36);
 }
+
