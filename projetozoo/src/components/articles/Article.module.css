@@ -24,10 +24,22 @@
 
 
 .articleImg {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.felinos {
     background-image: url('imagens/tigers.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
+
+.repteis {
+    background-image: url('imagens/crocodile.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 .articleText {
     background-color: rgba(255, 255, 255, 0.767);
