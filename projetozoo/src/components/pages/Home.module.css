@@ -10,14 +10,25 @@
 
     grid-template-areas:
     ".  . container  .  ."
+    
 }
 
 
 .container {
-    
+    display: flex;
     width: 1200px;
     padding: 50px;
     grid-area: container;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.botao {
+    grid-area: botao;
 }
 
 .titleContainer {
@@ -25,8 +36,11 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+    grid-area: titleContainer;
     
 }
+
+
 
 .titleContainer h1 {
     font-size: 7em;
