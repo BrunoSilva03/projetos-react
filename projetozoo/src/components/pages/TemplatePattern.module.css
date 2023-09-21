@@ -1,3 +1,29 @@
+.containerBody {
+   display: grid;
+
+   grid-template-areas: 
+   ".   container   .   ."
+}
+
+
+
 .container {
-    background-color: gray;
+   
+    width: 600px;
+    padding: 50px;
+    grid-area: container;
+}
+
+.container h1 {
+    font-size: 3em;
+    color: greenyellow;
+    margin-bottom: 33px;
+}
+
+.container p {
+    font-size: 1.5em;
+}
+
+.container i {
+    color: aqua;
 }
