@@ -39,6 +39,14 @@ function Home() {
 
                  <Article 
                     animalType="Répteis"
+
+                    description="O termo réptil vem do latim reptilis e significa “que se arrasta”. Os répteis (latim científico: Reptilia) constituem uma classe de animais vertebrados tetrápodes e ectotérmicos, ou seja, não possuem temperatura corporal constante. São todos amniotas (animais cujos embriões são rodeados por uma membrana amniótica), característica que lhes permitiu ficarem independentes da água para reprodução, ao contrário dos anfíbios. Os répteis atuais são representados por quatro ordens: Testudines, Crocodylia, Squamata e Rhynchocephalia."
+
+                    animals="Alguns exemplos de répteis são a Cobra, Jacaré, Crocodilo, Teiú, calango, Dragão de Komodo lagartos e tartarugas"
+
+                    aliment="O tipo de alimentação dos répteis varia conforme a espécie, alguns se alimentam de ovos, peixes, animais, outros de insetos e até mesmo flores, sementes e algas. Portanto, cada espécie possui sua própria característica de alimentação, influenciada diretamente pelo habitat em que vive."
+
+                    habitat="os répteis podem ser encontrados em boa parte da Terra, com exceção de locais muito frios, devido a característica de serem animais de sangue frio, influenciados pela temperatura ambiente."
                  />
             </article>
             <Footer />
