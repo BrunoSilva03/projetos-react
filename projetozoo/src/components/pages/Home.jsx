@@ -76,6 +76,20 @@ function Home() {
 
                     habitat="A maioria dos anfíbios é encontrada em ambientes úmidos, como florestas e pântanos. Aqueles que vivem em ambiente seco, geralmente, escondem-se em tocas e folhas úmidas a maior parte do dia. Essa umidade é fundamental para manter a pele úmida e a realização de trocas gasosas."
                  />
+
+
+                 <Article 
+                 
+                    animalType="Peixes"
+
+                    description="Os peixes são os animais vertebrados que primeiro surgiram em nosso planeta. São aquáticos e apresentam uma série de adaptações que garantiram o sucesso do grupo nesse ambiente. Podem ser encontrados em diferentes locais, tanto em água doce quanto em água salgada."
+
+                    animals="Lambari, Pintado, Peixe-Palhaço, Tilápia, Dourado, Tucunaré, Pirarara, Pirarucu, Bicuda, Corvina, Saicanga etc..."
+
+                    aliment="No seu habitat natural, os peixes costumam se alimentar de outros animais aquáticos de tamanho menor como larvas ou invertebrados. A maioria são carnívoros, mas existem algumas espécies que se alimentam de plantas e algas."
+
+                    habitat="Os peixes, como todos nós sabemos, são animais que vivem apenas em ambientes aquáticos, tais como rios, lagos e mares. Esses animais apresentam diversas adaptações que permitem a sua sobrevivência nesses ambientes, tais como respiração branquial, nadadeiras para a locomoção e estruturas que possibilitam a flutuação."
+                 />
             </article>
             <Footer />
         </div>

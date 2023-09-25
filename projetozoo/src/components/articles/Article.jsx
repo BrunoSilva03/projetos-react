@@ -22,7 +22,9 @@ function Article({ animalType, description, animals, aliment, habitat }) {
             <div className={(animalType == "Felinos" ? styles.felinos : (
                 animalType == "Répteis" ? styles.repteis : (
                     animalType == "Aves" ? styles.aves : (
-                        animalType == "Anfibios" ? styles.anfibios : " "
+                        animalType == "Anfibios" ? styles.anfibios : (
+                            animalType == "Peixes" ?  styles.fish : " "
+                        )
                     )
                 )
             ))}>
