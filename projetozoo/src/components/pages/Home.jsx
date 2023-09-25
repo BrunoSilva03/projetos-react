@@ -62,6 +62,20 @@ function Home() {
                     habitat="A maior biodiversidade de aves são encontradas em florestas, montanhas, matas e desertos. As aves são homeotérmicas, ou seja, conseguem controlar a temperatura do corpo de acordo com o clima ambiente. As penas são ótimos aliados para essa habilidade."
 
                  />
+
+                 <Article 
+
+                    animalType="Anfibios"
+
+                    description="Têm como característica principal viverem em transição entre os meios aquático e terrestre. Sua dependência da água está relacionada ao desenvolvimento e reprodução. Eles são considerados animais ectotérmicos, portanto, a temperatura do corpo é dependente do ambiente externo. Ademais, a pele fina e permeável serve para a respiração cutânea, que se soma à pulmonar. Por fim, estes animais sofrem metamorfose entre a fase larval e adulta."
+
+
+                    animals="Alguns exemplos de anfíbios são Sapos, Rãs, Salamandras, Cobras-Cegas, Tritões e Pererecas"
+
+                    aliment="A alimentação dos anfíbios é muito variada e depende da espécie e da fase de vida observadas. Em algumas espécies, as larvas podem ser herbívoras, onívoras, carnívoras ou até mesmo detritívoras. Na fase adulta, os anfíbios são carnívoros e podem se alimentar de insetos, aranhas, minhocas e outros animais."
+
+                    habitat="A maioria dos anfíbios é encontrada em ambientes úmidos, como florestas e pântanos. Aqueles que vivem em ambiente seco, geralmente, escondem-se em tocas e folhas úmidas a maior parte do dia. Essa umidade é fundamental para manter a pele úmida e a realização de trocas gasosas."
+                 />
             </article>
             <Footer />
         </div>

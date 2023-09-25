@@ -38,12 +38,14 @@
     background-image: url('imagens/crocodile.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: left center;
 }
 
 .aves {
     background-image: url('imagens/birds.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: left center;
 }
 
 
@@ -51,6 +53,7 @@
     background-image: url('imagens/anfibios.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: left bottom;
 }
 
 .fish {

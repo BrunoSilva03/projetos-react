@@ -1,6 +1,6 @@
 import styles from './Article.module.css';
 
-import { FaCat, FaFrog, FaDove } from 'react-icons/fa'
+import { FaCat, FaFrog, FaDove, FaDragon } from 'react-icons/fa'
 
 
 
@@ -10,8 +10,9 @@ function Article({ animalType, description, animals, aliment, habitat }) {
         <>
             <p className={styles.title}>
                 <h1>{animalType == "Felinos" && <FaCat />}
-                    {animalType == "Répteis" && <FaFrog />} 
-                    {animalType == "Aves" && <FaDove />} {animalType}
+                    {animalType == "Répteis" && <FaDragon />} 
+                    {animalType == "Aves" && <FaDove />} 
+                    {animalType == "Anfibios" && <FaFrog />} {animalType}
                 </h1>
             </p>
 
@@ -20,7 +21,9 @@ function Article({ animalType, description, animals, aliment, habitat }) {
 
             <div className={(animalType == "Felinos" ? styles.felinos : (
                 animalType == "Répteis" ? styles.repteis : (
-                    animalType == "Aves" ? styles.aves : ""
+                    animalType == "Aves" ? styles.aves : (
+                        animalType == "Anfibios" ? styles.anfibios : " "
+                    )
                 )
             ))}>
 
