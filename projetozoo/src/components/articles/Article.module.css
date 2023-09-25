@@ -40,6 +40,25 @@
     background-attachment: fixed;
 }
 
+.aves {
+    background-image: url('imagens/birds.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.anfibios {
+    background-image: url('imagens/anfibios.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fish {
+    background-size: url('imagens/peixes.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 .articleText {
     background-color: rgba(255, 255, 255, 0.767);

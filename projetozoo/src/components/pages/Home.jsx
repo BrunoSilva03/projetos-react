@@ -48,6 +48,20 @@ function Home() {
 
                     habitat="os répteis podem ser encontrados em boa parte da Terra, com exceção de locais muito frios, devido a característica de serem animais de sangue frio, influenciados pela temperatura ambiente."
                  />
+
+                 <Article
+
+                    animalType="Aves"
+
+                    description="São facilmente identificados por sua adaptação ao voo. Possuem pele recoberta de penas, asas e ossos pneumáticos para ajudar nesta tarefa. Como são endotérmicos, mantêm uma temperatura de corpo constante. Todas as aves são ovíparas. Podem ser voadoras – águias, tucanos e andorinhas – ou não voadoras – pinguins e avestruzes."
+
+                    animals="Alguns exemplos de aves são: Kiwi, Seriema, Arara, Arara-Azul, Papagaio, Avestruz, Pinguim, Pardal, Gavião, Falcão,Urubu, Águia, Tucano entre outros..."
+
+                    aliment="Aves herbívoras se alimentam de sementes, frutas, néctar, etc., enquanto que as aves carnívoras consomem outras aves, pequenos vertebrados e restos de animais (carniça)"
+
+                    habitat="A maior biodiversidade de aves são encontradas em florestas, montanhas, matas e desertos. As aves são homeotérmicas, ou seja, conseguem controlar a temperatura do corpo de acordo com o clima ambiente. As penas são ótimos aliados para essa habilidade."
+
+                 />
             </article>
             <Footer />
         </div>

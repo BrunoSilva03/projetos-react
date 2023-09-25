@@ -1,33 +1,17 @@
 import styles from './Article.module.css';
 
-import { FaCat, FaFrog } from 'react-icons/fa'
+import { FaCat, FaFrog, FaDove } from 'react-icons/fa'
 
 
 
 function Article({ animalType, description, animals, aliment, habitat }) {
-    /*
-
-    var backgroundImage = window.document.querySelector('.articleImg')
-
-    function addClass(animalType) {
-        
-        if(animalType == "Felinos") {
-            backgroundImage.classList.add('felinos');
-    
-        } else if(animalType == "Répteis") {
-            backgroundImage.classList.add('repteis');
-        }
-    }
-    */
-
-
-
 
     return (
         <>
             <p className={styles.title}>
                 <h1>{animalType == "Felinos" && <FaCat />}
-                    {animalType == "Répteis" && <FaFrog />} {animalType}
+                    {animalType == "Répteis" && <FaFrog />} 
+                    {animalType == "Aves" && <FaDove />} {animalType}
                 </h1>
             </p>
 
@@ -35,7 +19,9 @@ function Article({ animalType, description, animals, aliment, habitat }) {
 
 
             <div className={(animalType == "Felinos" ? styles.felinos : (
-                animalType == "Répteis" ? styles.repteis : " "
+                animalType == "Répteis" ? styles.repteis : (
+                    animalType == "Aves" ? styles.aves : ""
+                )
             ))}>
 
 
