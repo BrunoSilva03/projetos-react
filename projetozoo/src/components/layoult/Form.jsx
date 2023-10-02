@@ -1,8 +1,12 @@
 import styles from './Form.module.css'
 
-function Form() {
+function Form({name, animalType, description, aliment, habitat}) {
     return (
-        <form>Uai</form>
+        <div>
+            <form>
+                <label htmlFor=""></label>
+            </form>
+        </div>
     )
 }
 
