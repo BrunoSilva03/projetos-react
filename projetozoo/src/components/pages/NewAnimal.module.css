@@ -18,14 +18,18 @@
 
 .newAnimal_Container h1 {
     margin-bottom: 1em;
+    
 }
 
-.newAnimal_Container label, input {
+.newAnimal_Container label {
     font-size: 1.5em;
 }
 
 .newAnimal_Container input, select {
     width: 500px;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 3px;
 }
 
 .sectionForm {
