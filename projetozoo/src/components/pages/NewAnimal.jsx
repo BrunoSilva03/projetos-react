@@ -1,13 +1,20 @@
 import NavBar from '../layoult/NavBar'
+import Form from '../layoult/Form'
 import Footer from '../layoult/Footer'
+
+import styles from './NewAnimal.module.css'
 
 
 function NewAnimal() {
     return (
         <>
             <NavBar />
-            <h1>NewAnimal</h1>
+
+            <Form />
+
+
             <Footer />
+
         </>
     )
 }
