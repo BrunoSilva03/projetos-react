@@ -18,7 +18,7 @@ function Home() {
                         <h1>ZOO MANAGER</h1>
                     </div>
 
-                    <div className={styles.botao}><Button texto="Cadastrar Animal" /></div>
+                    <div className={styles.botao}><Button to="/newAnimal" texto="Cadastrar Animal" /></div>
                 </section>
             </div>
 
