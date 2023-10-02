@@ -14,7 +14,7 @@ function NewAnimal() {
                     <h1>Cadastrar Novo Animal</h1>
                     <section >
                         <form className={styles.sectionForm}>
-                            <p><p><label htmlFor="name">Nome:</label></p> <input id="name" name="name" type="text" /></p>
+                            <p><p><label htmlFor="name">Nome:</label></p> <input id="name" name="name" type="text" placeholder="Insira o nome do animal"/></p>
 
                             <p>
                                 <p><label htmlFor="animalType">Tipo do Animal:</label>
@@ -31,10 +31,10 @@ function NewAnimal() {
                             </p>
 
 
-                            <p><p><label htmlFor="description">Descrição:</label></p> <input id="description" name="description" type="text" /></p>
+                            <p><p><label htmlFor="description">Descrição:</label></p> <input id="description" name="description" type="text" placeholder="Insira a descrição do animal"/></p>
 
 
-                            <p><p><label htmlFor="aliment">Alimentação:</label></p> <input id="aliment" name="aliment" type="text" /></p>
+                            <p><p><label htmlFor="aliment">Alimentação:</label></p> <input id="aliment" name="aliment" type="text" placeholder="Insira a alimentação do animal"/></p>
 
                             <p><p><label htmlFor="habitat">Habitat:</label></p>
                                 <select name="habitat" id="habitat">
