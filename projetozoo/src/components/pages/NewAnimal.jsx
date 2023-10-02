@@ -9,23 +9,22 @@ function NewAnimal() {
     return (
         <>
             <NavBar />
-
             <div className={styles.newAnimalBody}>
                 <div className={styles.newAnimal_Container}>
                     <h1>Cadastrar Novo Animal</h1>
                     <section className={styles.sectionForm}>
                         <form>
-                            <label htmlFor="name">Nome:</label> <input id="name" name="name" type="text" />
+                            <p><label htmlFor="name">Nome:</label> <input id="name" name="name" type="text" /></p>
 
-                            <label htmlFor="animalType">Tipo do Animal:</label> <select name="animalType" id="animalType"></select>
-
-
-                            <label htmlFor="description">Descrição:</label> <input id="description" name="description" type="text" />
+                            <p><label htmlFor="animalType">Tipo do Animal:</label> <select name="animalType" id="animalType"></select></p>
 
 
-                            <label htmlFor="aliment">Alimentação:</label> <input id="aliment" name="aliment" type="text" />
+                            <p><label htmlFor="description">Descrição:</label> <input id="description" name="description" type="text" /></p>
 
-                            <label htmlFor="habitat">Habitat:</label> <select name="habitat" id="habitat"></select>
+
+                            <p><label htmlFor="aliment">Alimentação:</label> <input id="aliment" name="aliment" type="text" /></p>
+
+                            <p><label htmlFor="habitat">Habitat:</label> <select name="habitat" id="habitat"></select></p>
                         </form>
                     </section>
                 </div>
