@@ -1,0 +1,40 @@
+.areaButton {
+  display: flex;
+   justify-content: center;
+    
+   
+}
+
+
+
+
+.areaButton .btnSubmit, 
+.areaButton .btnClear {
+    width: 200px;
+    height: 90px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 3px 9px 9px rgba(0, 0, 0, 0.262);
+}
+
+.areaButton .btnClear {
+    grid-area: clear;
+}
+
+.areaButton .btnSubmit {
+    grid-area: submit;
+}
+
+.btnClear:hover {
+    background-color: rgb(19, 19, 19);
+    color: rgb(238, 13, 13);
+}
+
+.btnSubmit:hover {
+    background-color: rgb(19, 19, 19);
+    color: greenyellow;
+}
+
+

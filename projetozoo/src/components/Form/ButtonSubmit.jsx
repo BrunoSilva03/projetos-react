@@ -1,9 +1,9 @@
-import styles from './ButtonSubmit.module.css'
+import styles from './ButtonLayoult.module.css'
 
 function ButtonSubmit({ text }) {
     return (
         <div className={styles.areaButton}>
-            <input type="submit" value={text} className={styles.btn}/>
+            <input type="submit" value={text} className={styles.btnSubmit}/>
         </div>
     )
 }
