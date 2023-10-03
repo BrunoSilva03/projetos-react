@@ -9,12 +9,12 @@ function NewAnimal() {
     return (
         <>
             <NavBar />
-            <ProjectForm />
 
             <div className={styles.newAnimalBody}>
                 <div className={styles.newAnimal_Container}>
                     <h1>Cadastrar Novo Animal</h1>
-            {/*
+                    <ProjectForm />
+                    {/*
                     <section >
                         <form className={styles.sectionForm}>
                             <p><p><label htmlFor="name">Nome:</label></p> <input id="name" name="name" type="text" placeholder="Insira o nome do animal"/></p>

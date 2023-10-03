@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 import Input from '../Form/Input'
+import Select from '../Form/Select'
 
 import styles from './ProjectForm.module.css';
 
@@ -15,8 +16,9 @@ function ProjectForm() {
             placeholder="Insira o nome do animal"/>
 
 
-            <label htmlFor="idanimaltype">Tipo do animal:</label>
-            <select name="animaltype" id="idanimaltype"></select>
+            <Select text="Tipo do animal:"
+            name="idanimalType"
+            />
 
             
 
@@ -25,9 +27,11 @@ function ProjectForm() {
             name="idaliment"
             placeholder="Insira o que o animal costuma comer" />
 
-            <label htmlFor="idhabitat">Habitat:</label>
-            <select name="habitat" id="idhabitat"></select>
 
+
+
+            <Select text="Habitat:"
+            name="idhabitat"/>
 
 
         </form>

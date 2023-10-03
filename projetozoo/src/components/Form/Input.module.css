@@ -1,3 +1,29 @@
 .form_control {
-    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
+
+
+.form_control input {
+    border: 1px solid greenyellow;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+.form_control label {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+.form_control select {
+    padding: 0.7em;
+    border-radius: 0;
+    border: none;
+    border: 1px solid greenyellow;
+    margin-bottom: 1em;
+    padding: 1em;
+
+}
+
+
