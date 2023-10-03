@@ -1,5 +1,5 @@
 import NavBar from '../layoult/NavBar'
-import Form from '../layoult/Form'
+import ProjectForm from '../projects/ProjectForm'
 import Footer from '../layoult/Footer'
 
 import styles from './NewAnimal.module.css'
@@ -9,9 +9,12 @@ function NewAnimal() {
     return (
         <>
             <NavBar />
+            <ProjectForm />
+
             <div className={styles.newAnimalBody}>
                 <div className={styles.newAnimal_Container}>
                     <h1>Cadastrar Novo Animal</h1>
+            {/*
                     <section >
                         <form className={styles.sectionForm}>
                             <p><p><label htmlFor="name">Nome:</label></p> <input id="name" name="name" type="text" placeholder="Insira o nome do animal"/></p>
@@ -51,9 +54,9 @@ function NewAnimal() {
                             <p><div className={styles.areaButton}><input type="submit" className={styles.btnCadastrar} value="Cadastrar" /></div></p>
                         </form>
                     </section>
+                */}
                 </div>
             </div>
-
 
             <Footer />
 
