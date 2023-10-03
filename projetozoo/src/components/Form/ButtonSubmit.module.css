@@ -1,0 +1,20 @@
+.areaButton .btn {
+    width: 200px;
+    height: 90px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 3px 9px 9px rgba(0, 0, 0, 0.262);
+}
+
+.btn:hover {
+    background-color: rgb(19, 19, 19);
+    color: greenyellow;
+}
+
+.areaButton {
+    display: flex;
+    justify-content: right;
+   
+}

@@ -2,6 +2,7 @@ import {useState} from 'react'
 
 import Input from '../Form/Input'
 import Select from '../Form/Select'
+import SubmitButton from '../Form/ButtonSubmit'
 
 import styles from './ProjectForm.module.css';
 
@@ -32,6 +33,10 @@ function ProjectForm() {
 
             <Select text="Habitat:"
             name="idhabitat"/>
+
+            <SubmitButton text="Cadastrar" />
+
+
 
 
         </form>
