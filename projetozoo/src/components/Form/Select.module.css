@@ -15,6 +15,18 @@
     margin-bottom: 1em;
     padding: 1em;
     color: rgb(152, 225, 42);
+    appearance: none;
+    background: black;
+    
 
 }
+
+.form_control select:focus {
+    outline: none;
+    
+}
+
+
+
+
 

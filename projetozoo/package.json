@@ -5,12 +5,12 @@
   "type": "module",
   "homepage": "projetos-react/projetozoo/",
   "scripts": {
+    "start": "react-scripts start",
+    "backend": "json-server --watch db.json --port 5000",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start": "react-scripts start",
-    "backend": "json-server --watch db.json --port 5000"
+    "preview": "vite preview"
   },
   "dependencies": {
     "classnames": "^2.3.2",

@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 import Input from '../Form/Input'
 import Select from '../Form/Select'
@@ -8,6 +8,21 @@ import SubmitButton from '../Form/ButtonSubmit'
 import styles from './ProjectForm.module.css';
 
 function ProjectForm() {
+    const [animalTypes, setAnimalTypes] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:5000/animalTypes", {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then((resp) => resp.json())
+      .then((data) => {
+        setAnimalTypes(data)
+      })
+      .catch((err) => console.log(err))
+    }, [])
+
     return(
         <form>
             
@@ -20,6 +35,7 @@ function ProjectForm() {
 
             <Select text="Tipo do animal:"
             name="idanimalType"
+            options={animalTypes}
             />
 
             
