@@ -29,12 +29,14 @@
     font-size: 1.5em;
 }
 
+/*
 .newAnimal_Container input, select {
     width: 500px;
     height: 30px;
     font-size: 1.2em;
     padding: 3px;
 }
+*/
 
 .sectionForm {
     display: flex;
