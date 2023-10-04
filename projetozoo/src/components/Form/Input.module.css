@@ -20,7 +20,14 @@
     color: #a7a7a7;
 }
 
+.form_control input:focus {
+    border: 1px solid greenyellow;
+    outline: none;
+}
 
+.form_control input:focus-visible {
+    outline: 1px solid greenyellow;
+}
 
 
 
