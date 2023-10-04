@@ -9,6 +9,7 @@ import styles from './ProjectForm.module.css';
 
 function ProjectForm() {
     const [animalTypes, setAnimalTypes] = useState([])
+    const [habitat, setHabitat] = useState([])
 
     useEffect(() => {
         fetch("http://localhost:5000/animalTypes", {
@@ -22,6 +23,21 @@ function ProjectForm() {
       })
       .catch((err) => console.log(err))
     }, [])
+
+
+    useEffect(() => {
+        fetch("http://localhost:5000/habitat", {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((resp) => resp.json())
+          .then((data) => {
+            setHabitat(data)
+          })
+          .catch((err) => console.log(err))
+    }, [])
+
 
     return(
         <form>
@@ -49,7 +65,8 @@ function ProjectForm() {
 
 
             <Select text="Habitat:"
-            name="idhabitat"/>
+            name="idhabitat"
+            options={habitat}/>
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
