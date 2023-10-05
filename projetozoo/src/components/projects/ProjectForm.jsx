@@ -11,6 +11,8 @@ function ProjectForm() {
     const [animalTypes, setAnimalTypes] = useState([])
     const [habitat, setHabitat] = useState([])
 
+    //O useEffect é para não ficar mandando requisições infinitamente ao servidor.
+    //Esses dois fetchs que se seguem é para aparecer as opções do Select vindas do db.json
     useEffect(() => {
         fetch("http://localhost:5000/animalTypes", {
         method: "GET",
