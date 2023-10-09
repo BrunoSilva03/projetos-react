@@ -47,6 +47,10 @@ function ProjectForm(handleSubmit, projectData) {
         handleSubmit(project)
     }
 
+    function handleChange(e) {
+        setProject({ ...project, [e.target.name]: e.target.value})
+    }
+
     return(
         <form onSubmit={submit}>
             
@@ -54,7 +58,8 @@ function ProjectForm(handleSubmit, projectData) {
             <Input type="text" 
             text="Nome: "
             name="idnome"
-            placeholder="Insira o nome do animal"/>
+            placeholder="Insira o nome do animal"
+            handleOnChange={handleChange}/>
 
 
             <Select text="Tipo do animal:"
@@ -68,7 +73,8 @@ function ProjectForm(handleSubmit, projectData) {
             <Input type="text"
             text="Alimentação: "
             name="idaliment"
-            placeholder="Insira o que o animal costuma comer" />
+            placeholder="Insira o que o animal costuma comer" 
+            handleOnChange={handleChange}/>
 
 
 
