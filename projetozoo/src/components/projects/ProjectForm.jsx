@@ -51,6 +51,16 @@ function ProjectForm(handleSubmit, projectData) {
         setProject({ ...project, [e.target.name]: e.target.value})
     }
 
+    function handleAnimalType(e) {
+        setProject({
+            ...project,
+            animalType: {
+                id: e.target.value,
+                name: e.target.options[e.target.selectedIndex].text
+            },
+        })
+    }
+
     return(
         <form onSubmit={submit}>
             
@@ -65,7 +75,8 @@ function ProjectForm(handleSubmit, projectData) {
             <Select text="Tipo do animal:"
             name="idanimalType"
             options={animalTypes}
-            value={animalTypes.animalTypes ? animalTypes.animalTypes.id : ''}
+            handleOnChange={handleAnimalType}
+            value={project.animalType ? project.animalType.id : ' '}
             />
 
             
