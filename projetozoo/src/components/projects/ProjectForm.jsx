@@ -7,7 +7,7 @@ import SubmitButton from '../Form/ButtonSubmit'
 
 import styles from './ProjectForm.module.css';
 
-function ProjectForm() {
+function ProjectForm(handleSubmit, projectData) {
     const [animalTypes, setAnimalTypes] = useState([])
     const [habitat, setHabitat] = useState([])
 
@@ -54,6 +54,7 @@ function ProjectForm() {
             <Select text="Tipo do animal:"
             name="idanimalType"
             options={animalTypes}
+            value={animalTypes.animalTypes ? animalTypes.animalTypes.id : ''}
             />
 
             
