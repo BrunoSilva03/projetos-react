@@ -10,6 +10,7 @@ import styles from './ProjectForm.module.css';
 function ProjectForm(handleSubmit, projectData) {
     const [animalTypes, setAnimalTypes] = useState([])
     const [habitat, setHabitat] = useState([])
+    const [project, setProject] = useState(projectData || {})
 
     //O useEffect é para não ficar mandando requisições infinitamente ao servidor.
     //Esses dois fetchs que se seguem é para aparecer as opções do Select vindas do db.json
@@ -41,8 +42,13 @@ function ProjectForm(handleSubmit, projectData) {
     }, [])
 
 
+    const submit = (e) => {
+        e.preventDefault()
+        handleSubmit(project)
+    }
+
     return(
-        <form>
+        <form onSubmit={submit}>
             
 
             <Input type="text" 
