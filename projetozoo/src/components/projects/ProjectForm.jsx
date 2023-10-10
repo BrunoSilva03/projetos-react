@@ -61,6 +61,17 @@ function ProjectForm(handleSubmit, projectData) {
         })
     }
 
+
+    function handleHabitat(e) {
+        setProject({
+            ...project,
+            habitat: {
+                id: e.target.value,
+                name: e.target.options[e.target.selectedIndex].text
+            }
+        })
+    }
+
     return(
         <form onSubmit={submit}>
             
@@ -92,7 +103,9 @@ function ProjectForm(handleSubmit, projectData) {
 
             <Select text="Habitat:"
             name="idhabitat"
-            options={habitat}/>
+            options={habitat}
+            handleOnChange={handleHabitat}
+            value={project.habitat ? project.habitat.id : ' '}/>
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
