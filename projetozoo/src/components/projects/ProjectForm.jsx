@@ -44,7 +44,8 @@ function ProjectForm(handleSubmit, projectData) {
 
     const submit = (e) => {
         e.preventDefault()
-        handleSubmit(project)
+        console.log(submit)
+        // handleSubmit(project)
     }
 
     function handleChange(e) {
@@ -80,7 +81,8 @@ function ProjectForm(handleSubmit, projectData) {
             text="Nome: "
             name="idnome"
             placeholder="Insira o nome do animal"
-            handleOnChange={handleChange}/>
+            handleOnChange={handleChange}
+            />
 
 
             <Select text="Tipo do animal:"
@@ -96,7 +98,8 @@ function ProjectForm(handleSubmit, projectData) {
             text="Alimentação: "
             name="idaliment"
             placeholder="Insira o que o animal costuma comer" 
-            handleOnChange={handleChange}/>
+            handleOnChange={handleChange}
+            />
 
 
 
