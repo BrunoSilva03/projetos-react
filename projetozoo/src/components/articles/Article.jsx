@@ -8,13 +8,13 @@ function Article({ animalType, description, animals, aliment, habitat }) {
 
     return (
         <>
-            <p className={styles.title}>
+            <div className={styles.title}>
                 <h1>{animalType == "Felinos" && <FaCat />}
                     {animalType == "Répteis" && <FaDragon />} 
                     {animalType == "Aves" && <FaDove />} 
                     {animalType == "Anfibios" && <FaFrog />} {animalType}
                 </h1>
-            </p>
+            </div>
 
 
 
