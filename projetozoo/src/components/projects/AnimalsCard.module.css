@@ -1,0 +1,19 @@
+.card {
+    background-color: white;
+    margin: 2rem;
+    width: 30em;
+    height: 30em;
+    border-radius: 10px;
+    border: 1px solid rgb(5, 72, 5);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.177);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.card h1 {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, green, greenyellow)
+}

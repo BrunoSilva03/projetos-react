@@ -13,6 +13,20 @@
       },
       "animals": 0,
       "id": 1
+    },
+    {
+      "idnome": "Águia",
+      "animalType": {
+        "id": "3",
+        "name": "Ave"
+      },
+      "idaliment": "Sei lá",
+      "habitat": {
+        "id": "3",
+        "name": "Ar"
+      },
+      "animals": 0,
+      "id": 2
     }
   ],
   "animalTypes": [
