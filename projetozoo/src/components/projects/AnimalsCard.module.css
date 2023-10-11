@@ -9,7 +9,17 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
 
+}
+/*Flex-grow para aumentar o tamanho que ocupa o segundo filho da div card
+que no caso são os dados do animal, tipo do animal, alimentação habitat e etc...*/
+.card div:nth-child(2) {
+    flex-grow: 2;
 }
 
 h1 {
@@ -27,9 +37,53 @@ h1 {
     font-size: 1.5em;
     margin: 2rem;
     font-weight: bold;
+    top: 0;
+   
 }
 
 
 .conteudoCard p {
     margin-bottom: 10px;
 }
+
+.areaBotoes {
+    
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    gap: 1.5em;
+}
+
+.areaBotoes button {
+    padding: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.areaBotoes .buttonAlterarAnimal {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    transition: .5s;
+}
+
+.areaBotoes .buttonAlterarAnimal:hover {
+    color: greenyellow;
+}
+
+.areaBotoes .buttonRemoverAnimal {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    transition: .5s;
+}
+
+.areaBotoes .buttonRemoverAnimal:hover {
+    color: red;
+}
+
+
