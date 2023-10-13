@@ -1,6 +1,6 @@
 import styles from './AnimalsCard.module.css'
 
-import {FaPen, FaTrash} from 'react-icons/fa'
+import { FaPen, FaTrash } from 'react-icons/fa'
 
 function AnimalsCard() {
     return (
@@ -17,7 +17,7 @@ function AnimalsCard() {
                 <p className={styles.areaBotoes}>
                     <button className={styles.buttonAlterarAnimal}>Alterar <FaPen /></button>
                     <button className={styles.buttonRemoverAnimal}>Excluir <FaTrash /></button>
-                    </p>
+                </p>
             </div>
         </>
 

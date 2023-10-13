@@ -22,7 +22,7 @@ que no caso são os dados do animal, tipo do animal, alimentação habitat e etc
     flex-grow: 2;
 }
 
-h1 {
+.card h1 {
     background-color: black;
     color: white;
     padding: 1em;
@@ -68,7 +68,7 @@ h1 {
     display: flex;
     gap: 1em;
     align-items: center;
-    transition: .5s;
+    transition: .9s;
 }
 
 .areaBotoes .buttonAlterarAnimal:hover {
