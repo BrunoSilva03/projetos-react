@@ -9,6 +9,20 @@ import styles from './Animals.module.css'
 function Animals() {
     const [animals, setAnimals] = useState([])
 
+    useEffect(() => {
+        fetch('http://localhost:5000/animals', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then((response) => response.json())
+          .then((data) => {
+            console.log(data)
+            setAnimals(data)
+          })
+          .catch((err) => console.log(err))
+    }, [])
+
     /*
     useEffetct(() => {
 
@@ -31,7 +45,15 @@ function Animals() {
         <>
             <NavBar />
             <div className={styles.AnimalsPageBody}>
-               <AnimalsCard />
+                {animals.length > 0 && 
+                animals.map((animal) => (
+                    <AnimalsCard name={animals.name} 
+                    animalType={animals.animalType}
+                    aliment={animals.aliment}
+                    habitat={animals.habitat}
+                    description={animals}/>
+
+                ))}
             </div>
             <Footer />
         </>
