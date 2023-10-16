@@ -2,7 +2,8 @@ import NavBar from '../layoult/NavBar'
 import Footer from '../layoult/Footer'
 import AnimalsCard from '../projects/AnimalsCard'
 
-import {useState, useEffect} from 'react'
+
+import { useState, useEffect } from 'react'
 
 import styles from './Animals.module.css'
 
@@ -16,11 +17,11 @@ function Animals() {
                 'Content-Type': 'application/json',
             },
         }).then((response) => response.json())
-          .then((data) => {
-            console.log(data)
-            setAnimals(data)
-          })
-          .catch((err) => console.log(err))
+            .then((data) => {
+                console.log(data)
+                setAnimals(data)
+            })
+            .catch((err) => console.log(err))
     }, [])
 
     /*
@@ -41,20 +42,25 @@ function Animals() {
     */
 
 
-    return(
+    return (
         <>
             <NavBar />
-            <div className={styles.AnimalsPageBody}>
-                {animals.length > 0 && 
-                animals.map((animal) => (
-                    <AnimalsCard name={animals.name} 
-                    animalType={animals.animalType}
-                    aliment={animals.aliment}
-                    habitat={animals.habitat}
-                    description={animals}/>
+            
 
-                ))}
-            </div>
+                <div className={styles.AnimalsPageBody}>
+                    {animals.length > 0 &&
+                        animals.map((animal) => (
+                            <AnimalsCard
+                                name={animals.idnome}
+                                
+                                aliment={animals.aliment}
+                                
+                                description={animals} />
+
+                        ))
+                    }
+                </div>
+            
             <Footer />
         </>
     )

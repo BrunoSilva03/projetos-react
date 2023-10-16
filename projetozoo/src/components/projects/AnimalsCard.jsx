@@ -4,10 +4,10 @@ import styles from './AnimalsCard.module.css'
 
 import { FaPen, FaTrash } from 'react-icons/fa'
 
-function AnimalsCard({ animals, name, animalType, aliment, habitat, description, }) {
+function AnimalsCard({ animals, idnome, animalType, aliment, habitat, description }) {
     return (
         <>
-            {animals ? 
+            {animals ?
                 <div className={styles.card}>
                     <h1> {name} </h1>
                     <div className={styles.conteudoCard}>

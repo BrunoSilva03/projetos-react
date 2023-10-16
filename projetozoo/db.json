@@ -27,6 +27,20 @@
       },
       "animals": 0,
       "id": 2
+    },
+    {
+      "idnome": "Leão",
+      "animalType": {
+        "id": "1",
+        "name": "Felino"
+      },
+      "idaliment": "Carne",
+      "habitat": {
+        "id": "1",
+        "name": "Terra"
+      },
+      "animals": 0,
+      "id": 3
     }
   ],
   "animalTypes": [
