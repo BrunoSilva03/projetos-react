@@ -5,10 +5,13 @@ import Button from '../layoult/Button'
 import Container from '../layoult/Container'
 import NavBar from '../layoult/NavBar'
 import Footer from '../layoult/Footer'
+import AnimalsCard from '../projects/AnimalsCard'
 
 import styles from './AnimalsTest.module.css'
 
 function AnimalTest() {
+    const [animals, setAnimals] = useState([])
+
 
     const location = useLocation()
 
@@ -28,7 +31,7 @@ function AnimalTest() {
             </div>
         {message && <Message msg={message} type="sucess"/>}
         <Container customClass="start">
-            <p>Cadastrar Animal</p>
+            <AnimalsCard />
         </Container>
         
         </div>
