@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import NewAnimal from './components/pages/NewAnimal'
 import Animals from './components/pages/Animals'
+import AnimalsTest from './components/pages/AnimalsTest'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 
@@ -23,6 +24,8 @@ function App() {
           <Route path="/newanimal" element={<NewAnimal />}></Route>
 
           <Route path="/animals" element={<Animals />}></Route>
+
+          <Route path="/animalstest" element={<AnimalsTest />}></Route>
 
           <Route path="/about" element={<About />}></Route>
 

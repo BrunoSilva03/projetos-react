@@ -22,7 +22,7 @@ function NavBar() {
                 </Link>
                 <ul>
                     <li>
-                        <Link to="/animals">
+                        <Link to="/animalstest">
                             <p>Animais</p>
                         </Link>
                     </li>
