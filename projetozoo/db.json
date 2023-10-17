@@ -41,6 +41,56 @@
       },
       "animals": 0,
       "id": 3
+    },
+    {
+      "idnome": "Elefante-Baleia",
+      "animalType": {
+        "id": "6",
+        "name": "Outros"
+      },
+      "idaliment": "Absolutamente tudo mermão",
+      "habitat": {
+        "id": "11",
+        "name": "Água, Terra e Ar"
+      },
+      "animals": 0,
+      "id": 4
+    },
+    {
+      "habitat": {
+        "id": "7",
+        "name": "Terra e Água"
+      },
+      "animals": 0,
+      "id": 5
+    },
+    {
+      "idnome": "Tigre de Bengala",
+      "animalType": {
+        "id": "1",
+        "name": "Felino"
+      },
+      "idaliment": "Sei lá",
+      "habitat": {
+        "id": "1",
+        "name": "Terra"
+      },
+      "animals": 0,
+      "id": 6
+    },
+    {
+      "idnome": "Lagartixa",
+      "animalType": {
+        "id": "2",
+        "name": "Réptil"
+      },
+      "idaliment": "Insetóides",
+      "habitat": {
+        "id": "12",
+        "name": "Água, Terra, Ar e Árvores"
+      },
+      "animals": 0,
+      "id": 7
     }
   ],
   "animalTypes": [

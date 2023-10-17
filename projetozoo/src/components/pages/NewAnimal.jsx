@@ -4,6 +4,7 @@ import NavBar from '../layoult/NavBar'
 import ProjectForm from '../projects/ProjectForm'
 import Footer from '../layoult/Footer'
 
+
 import styles from './NewAnimal.module.css'
 
 
@@ -25,7 +26,7 @@ function NewAnimal() {
         }).then((resp) => resp.json())
         .then((data) => {
             console.log(data)
-            Navigate("/animals", { message: 'Animal cadastrado no sistema com sucesso!'})
+            Navigate("/animalstest", {state: { message: 'Animal cadastrado no sistema com sucesso!'}})
         })
         .catch(err => console.log(err))
     }
