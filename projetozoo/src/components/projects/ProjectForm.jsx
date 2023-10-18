@@ -66,7 +66,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
     function handleDescription(e) {
         setProject({
             ...project,
-            [e.target.description]: e.target.value
+            description: e.target.value
         })
     }
 
