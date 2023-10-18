@@ -63,6 +63,13 @@ function ProjectForm({ handleSubmit, projectData} ) {
         })
     }
 
+    function handleDescription(e) {
+        setProject({
+            ...project,
+            [e.target.description]: e.target.value
+        })
+    }
+
 
     function handleHabitat(e) {
         setProject({
@@ -116,6 +123,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
             <TextArea text="Descrição:"
             placeholder="breve descrição do animal"
             rows="5"
+            handleOnChange={handleDescription}
             />
             
 

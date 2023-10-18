@@ -45,7 +45,7 @@ function AnimalTest() {
             </div>
         {message && <Message msg={message} type="sucess"/>}
         <Container customClass="start">
-            {animals.length > 0 && 
+            {animals.length > 0 ? 
             animals.map((animal) => (
                 //Tem que escrever os dados do jeito que está no banco de dados idnome ao invés de name
                 console.log("animal.idnome = " + animal.idnome),
@@ -55,7 +55,8 @@ function AnimalTest() {
                 idaliment={animal.idaliment}
                 habitat={animal.habitat.name}/>
             ))
-            }
+            :
+            <p>Não há animais cadastrados no sistema nesse exato momento</p>}
         </Container>
         
         </div>

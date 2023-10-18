@@ -48,6 +48,16 @@ que no caso são os dados do animal, tipo do animal, alimentação habitat e etc
     margin-bottom: 10px;
 }
 
+
+.conteudoCard .semDescricao {
+    color: black;
+    text-decoration: line-through;
+}
+
+.conteudoCard .descricao {
+    color: greenyellow;
+}
+
 .areaBotoes {
     
     display: flex;

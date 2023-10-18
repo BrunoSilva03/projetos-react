@@ -56,7 +56,6 @@
       "animals": 0,
       "id": 4
     },
-   
     {
       "idnome": "Tigre de Bengala",
       "animalType": {
@@ -84,8 +83,52 @@
       },
       "animals": 0,
       "id": 7
+    },
+    {
+      "idnome": "Tigre Siberiano",
+      "animalType": {
+        "id": "1",
+        "name": "Felino"
+      },
+      "idaliment": "Carnívora",
+      "habitat": {
+        "id": "7",
+        "name": "Terra e Água"
+      },
+      "animals": 0,
+      "id": 8
+    },
+    {
+      "idnome": "teste",
+      "animalType": {
+        "id": "2",
+        "name": "Réptil"
+      },
+      "idaliment": "Sei lá",
+      "habitat": {
+        "id": "13",
+        "name": "Água, Ar e Árvores"
+      },
+      "animals": 0,
+      "id": 9
+    },
+    {
+      "idnome": "teste 2",
+      "animalType": {
+        "id": "2",
+        "name": "Réptil"
+      },
+      "idaliment": "3",
+      "habitat": {
+        "id": "13",
+        "name": "Água, Ar e Árvores"
+      },
+      "undefined": "teste de description número 3",
+      "animals": 0,
+      "id": 10
     }
   ],
+  "description": [],
   "animalTypes": [
     {
       "id": 1,
@@ -166,4 +209,5 @@
       "name": "Água, Ar e Árvores"
     }
   ]
+  
 }
