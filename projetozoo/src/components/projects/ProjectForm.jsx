@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 
 import Input from '../Form/Input'
 import Select from '../Form/Select'
+import TextArea from '../Form/TextArea'
 import ButtonClear from '../Form/ButtonClear'
 import SubmitButton from '../Form/ButtonSubmit'
 
@@ -109,6 +110,14 @@ function ProjectForm({ handleSubmit, projectData} ) {
             options={habitat}
             handleOnChange={handleHabitat}
             value={project.habitat ? project.habitat.id : ' '}/>
+
+
+
+            <TextArea text="Descrição:"
+            placeholder="breve descrição do animal"
+            rows="5"
+            />
+            
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
