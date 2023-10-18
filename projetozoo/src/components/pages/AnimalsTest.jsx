@@ -49,7 +49,11 @@ function AnimalTest() {
             animals.map((animal) => (
                 //Tem que escrever os dados do jeito que está no banco de dados idnome ao invés de name
                 console.log("animal.idnome = " + animal.idnome),
-                <AnimalsCard name={animal.idnome}/>
+                console.log("animalType.name:" + animal.animalType.name),
+                <AnimalsCard idnome={animal.idnome}
+                animalType={animal.animalType.name}
+                idaliment={animal.idaliment}
+                habitat={animal.habitat.name}/>
             ))
             }
         </Container>

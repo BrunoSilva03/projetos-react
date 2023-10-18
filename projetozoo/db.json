@@ -56,14 +56,7 @@
       "animals": 0,
       "id": 4
     },
-    {
-      "habitat": {
-        "id": "7",
-        "name": "Terra e Água"
-      },
-      "animals": 0,
-      "id": 5
-    },
+   
     {
       "idnome": "Tigre de Bengala",
       "animalType": {

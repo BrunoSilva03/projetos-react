@@ -4,19 +4,23 @@ import styles from './AnimalsCard.module.css'
 
 import { FaPen, FaTrash } from 'react-icons/fa'
 
-function AnimalsCard({ name, animalType, aliment, habitat, description, handleRemove }) {
+function AnimalsCard({ idnome, animalType, idaliment, habitat, description, handleRemove }) {
     return (
         <>
-        <p>{name}</p>
-        {/*
-            {animals ?
+        {/**
+         * 
+        <p>{idnome}</p>
+        <p>AnimalType = {animalType}</p>
+         */}
+       
+            
                 <div className={styles.card}>
-                    <h1> {name} </h1>
+                    <h1> {idnome} </h1>
                     <div className={styles.conteudoCard}>
-                        <p> {animalType} </p>
-                        <p> {aliment} </p>
-                        <p> {habitat} </p>
-                        <p> {description} </p>
+                        <p> Tipo: {animalType} </p>
+                        <p> Alimentação: {idaliment} </p>
+                        <p> Habitat: {habitat} </p>
+                        <p> Descrição: {description} </p>
 
                     </div>
                     <p className={styles.areaBotoes}>
@@ -24,14 +28,7 @@ function AnimalsCard({ name, animalType, aliment, habitat, description, handleRe
                         <button className={styles.buttonRemoverAnimal}>Excluir <FaTrash /></button>
                     </p>
                 </div>
-            : 
-            <div className={styles.nenhumAnimalCadastradoDiv}>
-                <h1>Não há nenhum animal cadastrado no sistema</h1>
-                <Button to="/newAnimal" texto="Cadastrar Animal" />
-
-            </div>}
-
-            */}
+            
         </>
 
     )
