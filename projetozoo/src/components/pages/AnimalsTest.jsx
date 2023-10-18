@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 import Message from '../layoult/Message'
 import Button from '../layoult/Button'
@@ -14,11 +15,24 @@ function AnimalTest() {
 
 
     const location = useLocation()
-
     let message= ''
     if(location.state) {
         message = location.state.message
     }
+
+    useEffect(() => {
+        fetch('http://localhost:5000/animals', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then((response) => response.json())
+          .then((data) => {
+            console.log(data)
+            setAnimals(data)
+          })
+          .catch((error) => console.log(error))
+    }, [])
 
 
     return(
@@ -31,7 +45,13 @@ function AnimalTest() {
             </div>
         {message && <Message msg={message} type="sucess"/>}
         <Container customClass="start">
-            <AnimalsCard />
+            {animals.length > 0 && 
+            animals.map((animal) => (
+                //Tem que escrever os dados do jeito que está no banco de dados idnome ao invés de name
+                console.log("animal.idnome = " + animal.idnome),
+                <AnimalsCard name={animal.idnome}/>
+            ))
+            }
         </Container>
         
         </div>
