@@ -124,6 +124,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
             placeholder="breve descrição do animal"
             rows="5"
             handleOnChange={handleDescription}
+            value={project.description? project.description: ' '}
             />
             
 

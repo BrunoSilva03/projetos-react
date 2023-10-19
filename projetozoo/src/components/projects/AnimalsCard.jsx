@@ -20,7 +20,9 @@ function AnimalsCard({ idnome, animalType, idaliment, habitat, description, hand
                         <p> Tipo: {animalType} </p>
                         <p> Alimentação: {idaliment} </p>
                         <p> Habitat: {habitat} </p>
-                        {description ? <p className={styles.descricao}> Descrição: {description} </p> : <p>Descrição: <span className={styles.semDescricao}>sem descrição</span></p>}
+                        
+                        {description ? <p > Descrição: <span style={{color: 'greenyellow'}}>{description}</span> </p> : <p>Descrição: <span style={{color: 'black', textDecoration: 'line-through'}}>sem descrição</span></p>}
+                        
                         
 
                     </div>

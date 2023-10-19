@@ -85,62 +85,19 @@
       "id": 7
     },
     {
-      "idnome": "Tigre Siberiano",
+      "idnome": "Cervo",
       "animalType": {
-        "id": "1",
-        "name": "Felino"
+        "id": "6",
+        "name": "Outros"
       },
-      "idaliment": "Carnívora",
+      "idaliment": "Grama",
       "habitat": {
-        "id": "7",
-        "name": "Terra e Água"
+        "id": "1",
+        "name": "Terra"
       },
+      "description": "O Cervo é um animal bonito e fofinho que come grama eu ACHO!",
       "animals": 0,
       "id": 8
-    },
-    {
-      "idnome": "teste",
-      "animalType": {
-        "id": "2",
-        "name": "Réptil"
-      },
-      "idaliment": "Sei lá",
-      "habitat": {
-        "id": "13",
-        "name": "Água, Ar e Árvores"
-      },
-      "animals": 0,
-      "id": 9
-    },
-    {
-      "idnome": "teste 2",
-      "animalType": {
-        "id": "2",
-        "name": "Réptil"
-      },
-      "idaliment": "3",
-      "habitat": {
-        "id": "13",
-        "name": "Água, Ar e Árvores"
-      },
-      "undefined": "teste de description número 3",
-      "animals": 0,
-      "id": 10
-    },
-    {
-      "idnome": "Teste derradeiro",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "moscas teste",
-      "habitat": {
-        "id": "2",
-        "name": "Água"
-      },
-      "description": "breve descrição de teste que deu certo!!!",
-      "animals": 0,
-      "id": 11
     }
   ],
   "description": [],

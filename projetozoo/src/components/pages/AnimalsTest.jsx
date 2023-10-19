@@ -53,7 +53,8 @@ function AnimalTest() {
                 <AnimalsCard idnome={animal.idnome}
                 animalType={animal.animalType.name}
                 idaliment={animal.idaliment}
-                habitat={animal.habitat.name}/>
+                habitat={animal.habitat.name}
+                description={animal.description}/>
             ))
             :
             <p>Não há animais cadastrados no sistema nesse exato momento</p>}
