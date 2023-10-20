@@ -12,6 +12,7 @@ import styles from './AnimalsTest.module.css'
 
 function AnimalTest() {
     const [animals, setAnimals] = useState([])
+    const [animalMessage, setAnimalMessage] = useState('')
 
 
     const location = useLocation()
@@ -28,11 +29,25 @@ function AnimalTest() {
             },
         }).then((response) => response.json())
           .then((data) => {
-            console.log(data)
             setAnimals(data)
           })
           .catch((error) => console.log(error))
     }, [])
+
+
+    function removerAnimal(id) {
+        fetch(`http://localhost:5000/animals/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then((response) => response.json())
+          .then(() => {
+            setAnimals(animals.filter((animal) => animal.id !== id))
+            setAnimalMessage('Animal removido do sistema com Sucesso!')
+          })
+           .catch((err) => console.log(err))
+    }
 
 
     return(
@@ -44,17 +59,21 @@ function AnimalTest() {
                         <Button to="/newanimal" texto="cadastrar novo animal"/>
             </div>
         {message && <Message msg={message} type="sucess"/>}
+        {animalMessage && <Message type="sucess" msg={animalMessage} />}
         <Container customClass="start">
             {animals.length > 0 ? 
             animals.map((animal) => (
                 //Tem que escrever os dados do jeito que está no banco de dados idnome ao invés de name
-                console.log("animal.idnome = " + animal.idnome),
-                console.log("animalType.name:" + animal.animalType.name),
-                <AnimalsCard idnome={animal.idnome}
+                //console.log("animal.idnome = " + animal.idnome),
+                //console.log("animalType.name:" + animal.animalType.name),
+                <AnimalsCard 
+                id={animal.id}
+                idnome={animal.idnome}
                 animalType={animal.animalType.name}
                 idaliment={animal.idaliment}
                 habitat={animal.habitat.name}
-                description={animal.description}/>
+                description={animal.description}
+                handleRemove={removerAnimal}/>
             ))
             :
             <div className={styles.noAnimals}>

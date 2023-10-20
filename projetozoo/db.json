@@ -1,90 +1,6 @@
 {
   "animals": [
     {
-      "idnome": "Tigre",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Carnívora",
-      "habitat": {
-        "id": "1",
-        "name": "Terra"
-      },
-      "animals": 0,
-      "id": 1
-    },
-    {
-      "idnome": "Águia",
-      "animalType": {
-        "id": "3",
-        "name": "Ave"
-      },
-      "idaliment": "Sei lá",
-      "habitat": {
-        "id": "3",
-        "name": "Ar"
-      },
-      "animals": 0,
-      "id": 2
-    },
-    {
-      "idnome": "Leão",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Carne",
-      "habitat": {
-        "id": "1",
-        "name": "Terra"
-      },
-      "animals": 0,
-      "id": 3
-    },
-    {
-      "idnome": "Elefante-Baleia",
-      "animalType": {
-        "id": "6",
-        "name": "Outros"
-      },
-      "idaliment": "Absolutamente tudo mermão",
-      "habitat": {
-        "id": "11",
-        "name": "Água, Terra e Ar"
-      },
-      "animals": 0,
-      "id": 4
-    },
-    {
-      "idnome": "Tigre de Bengala",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Sei lá",
-      "habitat": {
-        "id": "1",
-        "name": "Terra"
-      },
-      "animals": 0,
-      "id": 6
-    },
-    {
-      "idnome": "Lagartixa",
-      "animalType": {
-        "id": "2",
-        "name": "Réptil"
-      },
-      "idaliment": "Insetóides",
-      "habitat": {
-        "id": "12",
-        "name": "Água, Terra, Ar e Árvores"
-      },
-      "animals": 0,
-      "id": 7
-    },
-    {
       "idnome": "Cervo",
       "animalType": {
         "id": "6",
@@ -114,7 +30,6 @@
       "animals": 0,
       "id": 9
     }
-    
   ],
   "description": [],
   "animalTypes": [
