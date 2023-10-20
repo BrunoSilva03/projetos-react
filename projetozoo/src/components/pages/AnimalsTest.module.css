@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Savage Jungle';
+    src: url('fonts/JungleRuff.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+
+}
+
 .project_container {
     padding: 2em;
 }
@@ -6,4 +14,18 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
+}
+
+.title_container h1{
+    font-family: 'Savage Jungle';
+  
+    font-size: 3em;
+}
+
+.noAnimals {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 100vw;
 }

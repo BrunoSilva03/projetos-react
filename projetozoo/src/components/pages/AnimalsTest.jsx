@@ -40,7 +40,7 @@ function AnimalTest() {
         <NavBar />
         <div className={styles.project_container}>
             <div className={styles.title_container}>
-                <h1>AnimalTest</h1>
+                <h1>Animais</h1>
                         <Button to="/newanimal" texto="cadastrar novo animal"/>
             </div>
         {message && <Message msg={message} type="sucess"/>}
@@ -57,7 +57,9 @@ function AnimalTest() {
                 description={animal.description}/>
             ))
             :
-            <p>Não há animais cadastrados no sistema nesse exato momento</p>}
+            <div className={styles.noAnimals}>
+                <p>Não há animais cadastrados no sistema nesse exato momento</p>
+            </div>}
         </Container>
         
         </div>
