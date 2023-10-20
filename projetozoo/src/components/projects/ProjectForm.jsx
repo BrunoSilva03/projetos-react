@@ -81,6 +81,9 @@ function ProjectForm({ handleSubmit, projectData} ) {
         })
     }
 
+
+   
+
     return(
         <form onSubmit={submit}>
             
@@ -89,6 +92,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
             text="Nome: "
             name="idnome"
             placeholder="Insira o nome do animal"
+            autocomplete="off"
             handleOnChange={handleChange}
             />
 
@@ -106,6 +110,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
             text="Alimentação: "
             name="idaliment"
             placeholder="Insira o que o animal costuma comer" 
+            autocomplete="off"
             handleOnChange={handleChange}
             />
 

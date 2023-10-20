@@ -1,35 +1,6 @@
 {
   "animals": [
-    {
-      "idnome": "Cervo",
-      "animalType": {
-        "id": "6",
-        "name": "Outros"
-      },
-      "idaliment": "Grama",
-      "habitat": {
-        "id": "1",
-        "name": "Terra"
-      },
-      "description": "O Cervo é um animal bonito e fofinho que come grama eu ACHO!",
-      "animals": 0,
-      "id": 8
-    },
-    {
-      "idnome": "Tigre Siberiano",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Carnívora",
-      "habitat": {
-        "id": "7",
-        "name": "Terra e Água"
-      },
-      "description": "Tigre-Siberiano é o Tigre mais legal, mais bonito e mais famoso, é o Tigre que tem no zoológico de\nBelo Horizonte. que é bastante amigável meu amiguinho!!! ",
-      "animals": 0,
-      "id": 9
-    }
+    
   ],
   "description": [],
   "animalTypes": [
