@@ -81,6 +81,11 @@ function ProjectForm({ handleSubmit, projectData} ) {
         })
     }
 
+    function checkInputs() {
+        var nome = window.document.querySelector('input').name('idnome');
+        console.log("nome animal: " + nome.value);
+    }
+
 
    
 
@@ -135,7 +140,7 @@ function ProjectForm({ handleSubmit, projectData} ) {
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
-                <SubmitButton text="Cadastrar" />
+                <SubmitButton onClick={checkInputs}text="Cadastrar" />
             </div>
 
 

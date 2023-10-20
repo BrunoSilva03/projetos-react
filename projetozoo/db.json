@@ -1,6 +1,19 @@
 {
   "animals": [
-    
+    {
+      "idnome": "animal planet",
+      "animalType": {
+        "id": "6",
+        "name": "Outros"
+      },
+      "idaliment": "Outros",
+      "habitat": {
+        "id": "12",
+        "name": "Água, Terra, Ar e Árvores"
+      },
+      "animals": 0,
+      "id": 1
+    }
   ],
   "description": [],
   "animalTypes": [
