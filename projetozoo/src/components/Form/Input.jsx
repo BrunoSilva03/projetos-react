@@ -4,7 +4,7 @@ function Input({type, text, name, placeholder, autocomplete, handleOnChange, val
     return(
         <div className={styles.form_control}>
             <label htmlFor={name}>{text}</label>
-            <input type={type} 
+            <input required type={type} 
             name={name}
             id={name}
             placeholder={placeholder}

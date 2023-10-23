@@ -140,7 +140,11 @@ function ProjectForm({ handleSubmit, projectData} ) {
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
-                <SubmitButton onClick={checkInputs}text="Cadastrar" />
+                <SubmitButton onClick={() => {
+                    if(idnome === '') {
+                        alert('Preencha o nome')
+                    }
+                }}text="Cadastrar" />
             </div>
 
 
