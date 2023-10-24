@@ -17,9 +17,12 @@ function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, 
             <div className={styles.card}>
                 <h1> {idnome} </h1>
                 <div className={styles.conteudoCard}>
-                    <p> Tipo: {animalType} </p>
+                    {animalType ? <p> Tipo: {animalType} </p> : <p>Tipo: Não especificado</p>}
+                    {console.log("animalType: " + animalType)}
                     <p> Alimentação: {idaliment} </p>
-                    <p> Habitat: {habitat} </p>
+                    {habitat ? <p> Habitat: {habitat} </p> : <p>Habitat: Não especificado</p>}
+                    
+                    {console.log("habitat: " + habitat)}
 
                     {description ? <p > Descrição: <span style={{ color: 'greenyellow' }}>{description}</span> </p> : <p>Descrição: <span style={{ color: 'black', textDecoration: 'line-through' }}>sem descrição</span></p>}
 

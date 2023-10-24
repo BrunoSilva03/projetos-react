@@ -1,5 +1,12 @@
 {
-  "animals": [],
+  "animals": [
+    {
+      "idnome": "sem animalType",
+      "idaliment": "aliment",
+      "animals": 0,
+      "id": 1
+    }
+  ],
   "description": [],
   "animalTypes": [
     {
