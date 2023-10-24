@@ -5,6 +5,7 @@ import Select from '../Form/Select'
 import TextArea from '../Form/TextArea'
 import ButtonClear from '../Form/ButtonClear'
 import SubmitButton from '../Form/ButtonSubmit'
+import ButtonEnviar from '../Form/ButtonEnviar'
 
 import styles from './ProjectForm.module.css';
 
@@ -140,11 +141,14 @@ function ProjectForm({ handleSubmit, projectData} ) {
 
             <div className={styles.divButton}>
                 <ButtonClear text="Limpar" />
+                {/*
                 <SubmitButton onClick={() => {
-                    if(idnome === '') {
-                        alert('Preencha o nome')
-                    }
+                    
+                    
+                    
                 }}text="Cadastrar" />
+                */}
+                <ButtonEnviar text="Cadastrar" />
             </div>
 
 
