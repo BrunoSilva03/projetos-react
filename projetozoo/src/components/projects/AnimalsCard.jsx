@@ -17,10 +17,10 @@ function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, 
             <div className={styles.card}>
                 <h1> {idnome} </h1>
                 <div className={styles.conteudoCard}>
-                    {animalType ? <p> Tipo: {animalType} </p> : <p>Tipo: Não especificado</p>}
+                    <p> Tipo: {animalType} </p> 
                     {console.log("animalType: " + animalType)}
                     <p> Alimentação: {idaliment} </p>
-                    {habitat ? <p> Habitat: {habitat} </p> : <p>Habitat: Não especificado</p>}
+                    <p> Habitat: {habitat} </p> 
                     
                     {console.log("habitat: " + habitat)}
 

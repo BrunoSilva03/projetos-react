@@ -1,10 +1,20 @@
 {
   "animals": [
+   
     {
-      "idnome": "sem animalType",
-      "idaliment": "aliment",
+      "idnome": "Avestruz",
+      "animalType": {
+        "id": "3",
+        "name": "Ave"
+      },
+      "idaliment": "Não sei, deve ser ovos ou não, não sei",
+      "habitat": {
+        "id": "1",
+        "name": "Terra"
+      },
+      "description": "Avestruz é uma ave legal!",
       "animals": 0,
-      "id": 1
+      "id": 3
     }
   ],
   "description": [],
