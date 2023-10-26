@@ -29,6 +29,20 @@
       "description": "Isto é meramente um teste",
       "animals": 0,
       "id": 4
+    },
+    {
+      "idnome": "jaguar",
+      "animalType": {
+        "id": "1",
+        "name": "Felino"
+      },
+      "idaliment": "carne",
+      "habitat": {
+        "id": "12",
+        "name": "Água, Terra e Árvores"
+      },
+      "animals": 0,
+      "id": 5
     }
   ],
   "description": [],
