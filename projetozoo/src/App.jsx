@@ -6,12 +6,13 @@ import Animals from './components/pages/Animals'
 import AnimalsTest from './components/pages/AnimalsTest'
 import About from './components/pages/About'
 import Contact from './components/pages/Contact'
+import Animal from './components/pages/Animal'
 
 
 import './App.css'
 
 function App() {
-  
+
 
   return (
     <>
@@ -30,6 +31,8 @@ function App() {
           <Route path="/about" element={<About />}></Route>
 
           <Route path="/contact" element={<Contact />}></Route>
+
+          <Route path="/animals/:id" element={<Animal />}></Route>
 
         </Routes>
       </Router>

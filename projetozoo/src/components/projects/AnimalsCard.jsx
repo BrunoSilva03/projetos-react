@@ -28,7 +28,7 @@ function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, 
 
                 </div>
                 <p className={styles.areaBotoes}>
-                    <button className={styles.buttonAlterarAnimal} >Alterar <FaPen /></button>
+                    <Button to={`/animals/${id}`} texto="Alterar" icone={<FaPen />}/>
                     <button className={styles.buttonRemoverAnimal} onClick={remove}>Excluir <FaTrash /></button>
                 </p>
             </div>

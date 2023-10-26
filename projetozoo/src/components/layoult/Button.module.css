@@ -6,9 +6,12 @@
     border-radius: 5px;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.191);
     transition: 0.5s;
+    display: flex;
+    gap: 1em;
 }
 
 .buttonLayoult:hover {
     color: rgb(188, 253, 91);
-    background-color: rgb(55, 55, 55);
+    background-color: black;
 }
+
