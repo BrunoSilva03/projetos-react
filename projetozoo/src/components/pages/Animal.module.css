@@ -1,0 +1,17 @@
+.animal_details {
+    padding: 2em;
+}
+
+.animal_details h1,
+.animal_details h2,
+.animal_details p {
+    margin-bottom: 0.5em;
+}
+
+
+.animal_details h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: greenyellow;
+    padding: .4em;
+}
