@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 
 import Message from '../layoult/Message'
 import Button from '../layoult/Button'
-import Container from '../layoult/Container'
-import NavBar from '../layoult/NavBar'
-import Footer from '../layoult/Footer'
+import Container from '../Layoult/Container'
+import NavBar from '../Layoult/NavBar'
+import Footer from '../Layoult/Footer'
 import AnimalsCard from '../projects/AnimalsCard'
 
 import styles from './AnimalsTest.module.css'
@@ -13,8 +13,7 @@ import styles from './AnimalsTest.module.css'
 function AnimalTest() {
     const [animals, setAnimals] = useState([])
     const [animalMessage, setAnimalMessage] = useState('')
-    const [showProjectForm, setProjectForm] = useState(false)
-    const [type, setType] = useState()
+
 
 
     const location = useLocation()
@@ -51,22 +50,7 @@ function AnimalTest() {
            .catch((err) => console.log(err))
     }
 
-    function updateAnimal(id) {
-        fetch(`http://localhost:5000/animals/${id}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(project),
-        }).then((response) => response.json())
-          .then((data) => {
-            setAnimals(data)
-            setShowProjectForm(false)
-            setAnimalMessage('Animal atualizado com sucesso!!!')
-            setType('sucess')
-          })
-          .catch((err) => console.log(err))
-    }
+    
 
 
     return(

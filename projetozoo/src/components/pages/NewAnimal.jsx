@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 
-import NavBar from '../layoult/NavBar'
+import NavBar from '../Layoult/NavBar'
 import ProjectForm from '../projects/ProjectForm'
-import Footer from '../layoult/Footer'
+import Footer from '../Layoult/Footer'
 
 
 import styles from './NewAnimal.module.css'
