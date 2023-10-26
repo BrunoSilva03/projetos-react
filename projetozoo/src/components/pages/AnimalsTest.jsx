@@ -13,6 +13,8 @@ import styles from './AnimalsTest.module.css'
 function AnimalTest() {
     const [animals, setAnimals] = useState([])
     const [animalMessage, setAnimalMessage] = useState('')
+    const [showProjectForm, setProjectForm] = useState(false)
+    const [type, setType] = useState()
 
 
     const location = useLocation()
@@ -47,6 +49,23 @@ function AnimalTest() {
             setAnimalMessage('Animal removido do sistema com Sucesso!')
           })
            .catch((err) => console.log(err))
+    }
+
+    function updateAnimal(id) {
+        fetch(`http://localhost:5000/animals/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project),
+        }).then((response) => response.json())
+          .then((data) => {
+            setAnimals(data)
+            setShowProjectForm(false)
+            setAnimalMessage('Animal atualizado com sucesso!!!')
+            setType('sucess')
+          })
+          .catch((err) => console.log(err))
     }
 
 

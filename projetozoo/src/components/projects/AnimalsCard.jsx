@@ -7,8 +7,6 @@ import { FaPen, FaTrash } from 'react-icons/fa'
 function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, handleRemove }) {
 
     const remove = (event) => {
-        console.log('entrou no remove')
-        console.log('id: ' + id)
         event.preventDefault()
         handleRemove(id)
     }

@@ -1,6 +1,5 @@
 {
   "animals": [
-   
     {
       "idnome": "Avestruz",
       "animalType": {
@@ -15,6 +14,21 @@
       "description": "Avestruz é uma ave legal!",
       "animals": 0,
       "id": 3
+    },
+    {
+      "idnome": "animal de teste",
+      "animalType": {
+        "id": "3",
+        "name": "Ave"
+      },
+      "idaliment": "Herbívora",
+      "habitat": {
+        "id": "14",
+        "name": "Água, Ar e Árvores"
+      },
+      "description": "Isto é meramente um teste",
+      "animals": 0,
+      "id": 4
     }
   ],
   "description": [],
