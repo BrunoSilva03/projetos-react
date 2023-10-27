@@ -1,36 +1,6 @@
 {
   "animals": [
     {
-      "idnome": "Avestruz",
-      "animalType": {
-        "id": "3",
-        "name": "Ave"
-      },
-      "idaliment": "ovos",
-      "habitat": {
-        "id": "1",
-        "name": "Terra"
-      },
-      "description": "Avestruz é uma ave legal",
-      "animals": 0,
-      "id": 3
-    },
-    {
-      "idnome": "Jaguar",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Carnívora",
-      "habitat": {
-        "id": "12",
-        "name": "Água, Terra e Árvores"
-      },
-      "animals": 0,
-      "id": 5,
-      "description": "Jaguar é a mesma coisa que onça"
-    },
-    {
       "idnome": "ema",
       "animalType": {
         "id": "3",
@@ -59,6 +29,21 @@
       "description": "animal grande com patas grandes unhas curvadas muito pelos juba uivados fortes.",
       "animals": 0,
       "id": 7
+    },
+    {
+      "idnome": "avestruz",
+      "animalType": {
+        "id": "3",
+        "name": "Ave"
+      },
+      "idaliment": "Ovos",
+      "habitat": {
+        "id": "1",
+        "name": "Terra"
+      },
+      "description": "Avestruz é uma ave legal",
+      "animals": 0,
+      "id": 8
     }
   ],
   "description": [],

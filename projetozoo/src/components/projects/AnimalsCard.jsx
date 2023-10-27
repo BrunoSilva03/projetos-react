@@ -6,10 +6,23 @@ import { FaPen, FaTrash } from 'react-icons/fa'
 
 function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, handleRemove }) {
 
-    const remove = (event) => {
+    const confirmação = (event) => {
+        var resposta = confirm("Deseja remover esse registro?");
+
+        if(resposta === true) {
+            remove(event)
+        }
+    }
+
+
+    function remove(event) {
         event.preventDefault()
         handleRemove(id)
     }
+
+   
+
+
     return (
         <>
             <div className={styles.card}>
@@ -29,7 +42,7 @@ function AnimalsCard({ id, idnome, animalType, idaliment, habitat, description, 
                 </div>
                 <p className={styles.areaBotoes}>
                     <Button to={`/animals/${id}`} texto="Alterar" icone={<FaPen />}/>
-                    <button className={styles.buttonRemoverAnimal} onClick={remove}>Excluir <FaTrash /></button>
+                    <button className={styles.buttonRemoverAnimal} onClick={confirmação}>Excluir <FaTrash /></button>
                 </p>
             </div>
 
