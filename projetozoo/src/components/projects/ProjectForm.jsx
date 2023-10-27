@@ -9,7 +9,7 @@ import ButtonEnviar from '../Form/ButtonEnviar'
 
 import styles from './ProjectForm.module.css';
 
-function ProjectForm({ handleSubmit, projectData} ) {
+function ProjectForm({ handleSubmit, btnText, projectData} ) {
     const [animalTypes, setAnimalTypes] = useState([])
     const [habitat, setHabitat] = useState([])
     const [project, setProject] = useState(projectData || {})
@@ -148,7 +148,8 @@ function ProjectForm({ handleSubmit, projectData} ) {
                     
                 }}text="Cadastrar" />
                 */}
-                <ButtonEnviar text="Cadastrar" />
+                {btnText ? <ButtonEnviar text={btnText} /> : <ButtonEnviar text="Cadastrar" /> }
+                
             </div>
 
 

@@ -1,7 +1,7 @@
 import NavBar from '../Layoult/NavBar'
 import Footer from '../Layoult/Footer'
 import Container from '../Layoult/Container'
-import AnimalCard from '../projects/AnimalsCard'
+import Message from '../Layoult/Message'
 import ProjectForm from '../projects/ProjectForm'
 
 import styles from './Animal.module.css'
@@ -16,6 +16,8 @@ function Animal() {
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [tipoAnimal, setTipoAnimal] = useState()
     const [habitat, setHabitat] = useState()
+    const [message, setMessage] = useState()
+    const [type, setType] = useState()
 
 
 
@@ -42,6 +44,23 @@ function Animal() {
     }, [id])
 
 
+    function updateAnimal(animal) {
+        fetch(`http://localhost:5000/animals/${animal.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(animal),
+        })
+          .then(resp => resp.json())
+          .then((data) => {
+            setAnimal(data)
+            setShowProjectForm(false)
+          })
+           .catch(err => console.log(err))
+    }
+
+
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
         console.log(animal)
@@ -55,6 +74,7 @@ function Animal() {
             <div>
                 <Container customClass="column">
                     <div className={styles.animal_details}>
+                        {message && <Message type={type} msg={message} />}
                         <h1>Animal: {animal.idnome}</h1>
 
                         {!showProjectForm ? (
@@ -94,7 +114,8 @@ function Animal() {
                             <div className={styles.soPraCentralizarDiv}>
                                 <div className={styles.animal_info}>
                                 
-                                        <ProjectForm />
+                                        <ProjectForm handleSubmit={updateAnimal} btnText="Concluir Update" 
+                                        projectData={animal}/>
                                 
                                 </div>
                             </div>
