@@ -2,6 +2,7 @@ import NavBar from '../Layoult/NavBar'
 import Footer from '../Layoult/Footer'
 import Container from '../Layoult/Container'
 import AnimalCard from '../projects/AnimalsCard'
+import ProjectForm from '../projects/ProjectForm'
 
 import styles from './Animal.module.css'
 
@@ -55,9 +56,7 @@ function Animal() {
                 <Container customClass="column">
                     <div className={styles.animal_details}>
                         <h1>Animal: {animal.idnome}</h1>
-                        <button onClick={toggleProjectForm}>
-                            {!showProjectForm ? 'Editar animal' : 'Fechar'}
-                        </button>
+
                         {!showProjectForm ? (
                             <div>
                                 <p>
@@ -74,20 +73,30 @@ function Animal() {
 
                                 {animal.description ? (
                                     <p>
-                                        <span>Descrição: </span> <span style={{fontWeight: 'normal', color: 'greenyellow'}}>{animal.description}</span>
+                                        <span>Descrição: </span> <span style={{ fontWeight: 'normal', color: 'greenyellow' }}>{animal.description}</span>
                                     </p>
                                 ) : (
                                     <p>
-                                        <span>Descrição: </span> <span style={{textDecoration: 'line-through'}}>sem descrição</span>
+                                        <span>Descrição: </span> <span style={{ textDecoration: 'line-through' }}>sem descrição</span>
                                     </p>
                                 )}
-                                
+
+                                <div className={styles.areaButton}>
+                                    <button className={styles.btn} onClick={toggleProjectForm}>
+                                        {!showProjectForm ? 'Editar animal' : 'Fechar'}
+                                    </button>
+                                </div>
+
                             </div>
 
 
                         ) : (
-                            <div>
-                                <p>detalhes do projeto</p>
+                            <div className={styles.soPraCentralizarDiv}>
+                                <div className={styles.animal_info}>
+                                
+                                        <ProjectForm />
+                                
+                                </div>
                             </div>
                         )}
                     </div>

@@ -16,9 +16,69 @@
     background-color: black;
     color: greenyellow;
     padding: .4em;
+    border-radius: 3px;
+    box-shadow: 10px  10px 5px  rgba(0, 0, 0, 0.146);
 }
 
 .animal_details span {
     font-weight: bold;
     
+}
+
+.btn {
+    color: rgb(128, 190, 36);
+    border: none;
+    padding: 25px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.191);
+    transition: 0.5s;
+    display: flex;
+    gap: 1em;
+}
+
+.btn:hover {
+    color: rgb(188, 253, 91);
+    background-color: black;
+}
+
+.areaButton {
+    display: flex;
+    justify-content: right;
+}
+
+.animal_info {
+    font-size: .9em;
+    background: #eeeded;
+    padding: 33px;
+    border-radius: 15px;
+    width: 900px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.animal_info input{
+    width: 600px;
+}
+
+
+.animal_info h1 {
+    margin-bottom: 1em;
+    
+}
+
+.animal_info label {
+    font-size: 1.5em;
+}
+
+.soPraCentralizarDiv {
+    display: flex;
+    justify-content: center;
 }
