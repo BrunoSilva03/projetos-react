@@ -1,5 +1,5 @@
-import NavBar from '../layoult/NavBar'
-import Footer from '../layoult/Footer'
+import NavBar from '../Layoult/NavBar'
+import Footer from '../Layoult/Footer'
 import AnimalsCard from '../projects/AnimalsCard'
 
 

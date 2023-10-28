@@ -44,6 +44,21 @@
       "description": "Avestruz é uma ave legal",
       "animals": 0,
       "id": 8
+    },
+    {
+      "idnome": "Onça-Pintada",
+      "animalType": {
+        "id": "1",
+        "name": "Felino"
+      },
+      "idaliment": "Carnívora - (Carnes)",
+      "habitat": {
+        "id": "1",
+        "name": "Terra"
+      },
+      "description": "A Onça-Pintada é um felino que habita a América do Sul",
+      "animals": 0,
+      "id": 9
     }
   ],
   "description": [],
