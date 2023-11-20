@@ -59,21 +59,6 @@
       "description": "A Onça-Pintada é um felino que habita a América do Sul",
       "animals": 0,
       "id": 9
-    },
-    {
-      "idnome": "Tigre",
-      "animalType": {
-        "id": "1",
-        "name": "Felino"
-      },
-      "idaliment": "Carnívora",
-      "habitat": {
-        "id": "7",
-        "name": "Terra e Água"
-      },
-      "description": "Grande felino e um dos animais mais famosos e bonitos do mundo!",
-      "animals": 0,
-      "id": 10
     }
   ],
   "description": [],
